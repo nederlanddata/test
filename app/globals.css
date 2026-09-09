@@ -1,5 +1,10 @@
 @import "tailwindcss";
 
-body {
+/* body {
   @apply bg-slate-50 text-slate-900;
+} */
+
+body {
+  background-color: #f8fafc;
+  color: #0f172a;
 }
