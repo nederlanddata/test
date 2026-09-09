@@ -1,0 +1,26 @@
+[
+  {
+    "id": "utrecht",
+    "naam": "Utrecht",
+    "scoreAlgemeen": 8.5,
+    "afstandSchool": 1.2,
+    "afstandSupermarkt": 0.4,
+    "totaleBevolking": 28200
+  },
+  {
+    "id": "amsterdam",
+    "naam": "Amsterdam",
+    "scoreAlgemeen": 7.9,
+    "afstandSchool": 0.8,
+    "totaleBevolking": 28200,
+    "afstandSupermarkt": 0.2
+  },
+  {
+    "id": "rotterdam",
+    "naam": "Rotterdam",
+    "scoreAlgemeen": 7.2,
+    "afstandSchool": 1.5,
+    "totaleBevolking": 28200,
+    "afstandSupermarkt": 0.6
+  }
+]
