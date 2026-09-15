@@ -598,8 +598,8 @@ export default function KaartPage() {
         <h1 className="text-2xl font-bold">
           Nederlandse{' '}
           {modus === 'gemeenten'
-            ? 'gemeenten'
-            : 'provincies'}
+            ? 'gemeenten (2025)'
+            : 'provincies (2025)'}
         </h1>
 
         <div className="flex items-center gap-3">
