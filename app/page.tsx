@@ -176,23 +176,23 @@ export default function KaartPage() {
         );
 
       // Herkomst: absolute aantallen -> percentage
-      case 'herkomstNederland':
-        return berekenPercentage(
-          item.bevolking?.herkomst?.nederland,
-          item.bevolking?.totaal
-        );
+      // case 'herkomstNederland':
+      //   return berekenPercentage(
+      //     item.bevolking?.herkomst?.nederland,
+      //     item.bevolking?.totaal
+      //   );
 
-      case 'herkomstEuropaExclNederland':
-        return berekenPercentage(
-          item.bevolking?.herkomst?.europaExclNederland,
-          item.bevolking?.totaal
-        );
+      // case 'herkomstEuropaExclNederland':
+      //   return berekenPercentage(
+      //     item.bevolking?.herkomst?.europaExclNederland,
+      //     item.bevolking?.totaal
+      //   );
 
-      case 'herkomstBuitenEuropa':
-        return berekenPercentage(
-          item.bevolking?.herkomst?.buitenEuropa,
-          item.bevolking?.totaal
-        );
+      // case 'herkomstBuitenEuropa':
+      //   return berekenPercentage(
+      //     item.bevolking?.herkomst?.buitenEuropa,
+      //     item.bevolking?.totaal
+      //   );
 
       case 'uitkeringsontvangersTotAow':
         return berekenPercentage(
@@ -752,10 +752,10 @@ function formatteerWaarde(
     key === 'volwassenen25Tot45' ||
     key === 'volwassenen45Tot65' ||
     key === 'ouderen65Tot80' ||
-    key === 'ouderen80Plus' ||
-    key === 'herkomstNederland' ||
-    key === 'herkomstEuropaExclNederland' ||
-    key === 'herkomstBuitenEuropa'
+    key === 'ouderen80Plus' 
+    // key === 'herkomstNederland' ||
+    // key === 'herkomstEuropaExclNederland' ||
+    // key === 'herkomstBuitenEuropa'
   ) {
     return waarde.toLocaleString(
       'nl-NL',
@@ -887,41 +887,41 @@ function getKleurExpressie(
       9, '#54278f',
     ],
 
-    herkomstNederland: [
-      'interpolate',
-      ['linear'],
-      ['coalesce', ['get', 'herkomstNederland'], 0],
-      35, '#f2f0f7',
-      45, '#dadaeb',
-      55, '#bcbddc',
-      70, '#9e9ac8',
-      80, '#756bb1',
-      90, '#54278f',
-    ],
+    // herkomstNederland: [
+    //   'interpolate',
+    //   ['linear'],
+    //   ['coalesce', ['get', 'herkomstNederland'], 0],
+    //   35, '#f2f0f7',
+    //   45, '#dadaeb',
+    //   55, '#bcbddc',
+    //   70, '#9e9ac8',
+    //   80, '#756bb1',
+    //   90, '#54278f',
+    // ],
 
-    herkomstEuropaExclNederland: [
-      'interpolate',
-      ['linear'],
-      ['coalesce', ['get', 'herkomstEuropaExclNederland'], 0],
-      0, '#f2f0f7',
-      3, '#dadaeb',
-      6, '#bcbddc',
-      9, '#9e9ac8',
-      12, '#756bb1',
-      15, '#54278f',
-    ],
+    // herkomstEuropaExclNederland: [
+    //   'interpolate',
+    //   ['linear'],
+    //   ['coalesce', ['get', 'herkomstEuropaExclNederland'], 0],
+    //   0, '#f2f0f7',
+    //   3, '#dadaeb',
+    //   6, '#bcbddc',
+    //   9, '#9e9ac8',
+    //   12, '#756bb1',
+    //   15, '#54278f',
+    // ],
 
-    herkomstBuitenEuropa: [
-      'interpolate',
-      ['linear'],
-      ['coalesce', ['get', 'herkomstBuitenEuropa'], 0],
-      0, '#f2f0f7',
-      6, '#dadaeb',
-      12, '#bcbddc',
-      18, '#9e9ac8',
-      24, '#756bb1',
-      30, '#54278f',
-    ],
+    // herkomstBuitenEuropa: [
+    //   'interpolate',
+    //   ['linear'],
+    //   ['coalesce', ['get', 'herkomstBuitenEuropa'], 0],
+    //   0, '#f2f0f7',
+    //   6, '#dadaeb',
+    //   12, '#bcbddc',
+    //   18, '#9e9ac8',
+    //   24, '#756bb1',
+    //   30, '#54278f',
+    // ],
 
     gemiddeldeHuishoudensgrootte: [
       'interpolate',
