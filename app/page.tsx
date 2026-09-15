@@ -14,7 +14,7 @@ const ONDERWERPEN = [
   {
     key: 'wozWaarde',
     label: 'WOZ-waarde',
-    eenheid: '(× €1.000)',
+    eenheid: '× €1.000',
   },
   {
     key: 'totaleBevolking',
