@@ -51,21 +51,21 @@ const ONDERWERPEN = [
     label: 'Ouderen 80+',
     eenheid: '%',
   },
-  {
-    key: 'herkomstNederland',
-    label: 'Herkomst Nederland',
-    eenheid: '%',
-  },
-  {
-    key: 'herkomstEuropaExclNederland',
-    label: 'Herkomst Europa',
-    eenheid: '%',
-  },
-  {
-    key: 'herkomstBuitenEuropa',
-    label: 'Herkomst buiten Europa',
-    eenheid: '%',
-  },
+  // {
+  //   key: 'herkomstNederland',
+  //   label: 'Herkomst Nederland',
+  //   eenheid: '%',
+  // },
+  // {
+  //   key: 'herkomstEuropaExclNederland',
+  //   label: 'Herkomst Europa',
+  //   eenheid: '%',
+  // },
+  // {
+  //   key: 'herkomstBuitenEuropa',
+  //   label: 'Herkomst buiten Europa',
+  //   eenheid: '%',
+  // },
   {
     key: 'gemiddeldeHuishoudensgrootte',
     label: 'Gem. huishoudensgrootte',
@@ -636,14 +636,14 @@ export default function KaartPage() {
 
           </div>
 
-          <button
+          {/* <button
             onClick={kopieerLink}
             className="inline-flex items-center gap-2 px-3 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-lg shadow-sm hover:bg-gray-50 transition-colors"
           >
             {gekopieerd
               ? 'Link gekopieerd!'
               : 'Deel kaart'}
-          </button>
+          </button> */}
 
         </div>
       </div>
@@ -658,7 +658,7 @@ export default function KaartPage() {
             onClick={() =>
               setActiefOnderwerp(o.key)
             }
-            className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
+            className={`px-2 py-1 rounded-lg text-xs font-medium transition-colors ${
               actiefOnderwerp === o.key
                 ? 'bg-blue-600 text-white'
                 : 'bg-gray-200 hover:bg-gray-300 text-gray-800'
