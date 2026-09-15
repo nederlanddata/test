@@ -14,7 +14,7 @@ const ONDERWERPEN = [
   {
     key: 'wozWaarde',
     label: 'WOZ-waarde',
-    eenheid: '× €1.000',
+    eenheid: '(× €1.000)',
   },
   {
     key: 'totaleBevolking',
@@ -71,11 +71,11 @@ const ONDERWERPEN = [
     label: 'Gem. huishoudensgrootte',
     eenheid: 'personen',
   },
-  {
-    key: 'uitkeringsontvangersTotAow',
-    label: 'Uitkeringsontvangers tot AOW',
-    eenheid: 'personen',
-  },
+  // {
+  //   key: 'uitkeringsontvangersTotAow',
+  //   label: 'Uitkeringsontvangers tot AOW',
+  //   eenheid: 'personen',
+  // },
 ] as const;
 
 type OnderwerpKey = (typeof ONDERWERPEN)[number]['key'];
@@ -194,11 +194,11 @@ export default function KaartPage() {
       //     item.bevolking?.totaal
       //   );
 
-      case 'uitkeringsontvangersTotAow':
-        return berekenPercentage(
-          item.socialeZekerheid?.uitkeringsontvangersTotAow,
-          item.bevolking?.totaal
-        );
+      // case 'uitkeringsontvangersTotAow':
+      //   return berekenPercentage(
+      //     item.socialeZekerheid?.uitkeringsontvangersTotAow,
+      //     item.bevolking?.totaal
+      //   );
 
       default:
         return null;
@@ -935,17 +935,17 @@ function getKleurExpressie(
       2.8, '#54278f',
     ],
 
-    uitkeringsontvangersTotAow: [
-      'interpolate',
-      ['linear'],
-      ['coalesce', ['get', 'uitkeringsontvangersTotAow'], 0],
-      5, '#f2f0f7',
-      6, '#dadaeb',
-      7, '#bcbddc',
-      8, '#9e9ac8',
-      9, '#756bb1',
-      10, '#54278f',
-    ],
+    // uitkeringsontvangersTotAow: [
+    //   'interpolate',
+    //   ['linear'],
+    //   ['coalesce', ['get', 'uitkeringsontvangersTotAow'], 0],
+    //   5, '#f2f0f7',
+    //   6, '#dadaeb',
+    //   7, '#bcbddc',
+    //   8, '#9e9ac8',
+    //   9, '#756bb1',
+    //   10, '#54278f',
+    // ],
   };
 
   return schalen[onderwerp] ?? ['literal', '#94a3b8'];
