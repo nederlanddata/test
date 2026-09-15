@@ -4,8 +4,8 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Gemeente Vergelijker",
-  description: "Data-gedreven inzicht in Nederlandse gemeenten",
+  title: "Data over Nederland",
+  description: "Vergelijk Nederlandse gemeenten en provincies op onderwerpen als bevolking, wonen, inkomen en meer. Zie hoe jouw gemeente ervoor staat.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
