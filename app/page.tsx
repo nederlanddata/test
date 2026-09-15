@@ -694,9 +694,8 @@ export default function KaartPage() {
         ref={mapContainer}
         style={{
           width: '100%',
-          height: '650px',
         }}
-        className="rounded-lg overflow-hidden border border-gray-300"
+        className="h-[420px] md:h-[650px] rounded-lg overflow-hidden border border-gray-300"
       />
     </div>
   );
