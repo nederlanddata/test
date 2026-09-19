@@ -587,6 +587,7 @@ export default function KaartPage() {
   const handleModusSwitch = (
     nieuweModus: ModusType
   ) => {
+    popupRef.current?.remove();
     setModus(nieuweModus);
 
     if (!mapRef.current || !geladen) return;
