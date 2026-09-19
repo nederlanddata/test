@@ -532,8 +532,9 @@ export default function KaartPage() {
           const features = map.queryRenderedFeatures(e.point, {
             layers: ['regio-vulling'],
           });
-
-          if (features.length === 0) {
+        
+          // Alleen popup sluiten als er NIET op een regio is geklikt
+          if (!features.length) {
             popupRef.current?.remove();
           }
         });
