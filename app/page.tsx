@@ -561,6 +561,7 @@ export default function KaartPage() {
 
   useEffect(() => {
     if (!mapRef.current || !geladen) return;
+    popupRef.current?.remove();
 
     if (mapRef.current.getLayer('regio-vulling')) {
       mapRef.current.setPaintProperty(
