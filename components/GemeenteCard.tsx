@@ -21,7 +21,7 @@ export default function GemeenteCard({
       <div className="grid md:grid-cols-2 gap-x-6 gap-y-3 text-sm">
         <div className="flex justify-between border-b border-slate-100 pb-2">
           <span className="text-slate-500">WOZ-waarde</span>
-          <span className="font-semibold text-slate-700">€ {wozWaarde} k</span>
+          <span className="font-semibold text-slate-700">€{wozWaarde} (× 1.000)</span>
         </div>
         <div className="flex justify-between border-b border-slate-100 pb-2">
           <span className="text-slate-500">Totale bevolking</span>
