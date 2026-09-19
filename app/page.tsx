@@ -175,7 +175,7 @@ export default function KaartPage() {
           item.bevolking?.totaal
         );
 
-      Herkomst: absolute aantallen -> percentage
+      // Herkomst: absolute aantallen -> percentage
       case 'herkomstNederland':
         return berekenPercentage(
           item.bevolking?.herkomst?.nederland,
