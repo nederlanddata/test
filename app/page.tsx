@@ -528,6 +528,16 @@ export default function KaartPage() {
             .addTo(map);
         });
 
+        map.on('click', (e) => {
+          const features = map.queryRenderedFeatures(e.point, {
+            layers: ['regio-vulling'],
+          });
+
+          if (features.length === 0) {
+            popupRef.current?.remove();
+          }
+        });
+
         // map.on('mouseleave', 'regio-vulling', () => {
         //   map.getCanvas().style.cursor = '';
         //   popup.remove();
