@@ -1006,10 +1006,10 @@ function getKleurExpressie(
       ['linear'],
       ['coalesce', ['get', 'ouderen65Plus'], 0],
       10, '#f2f0f7',
-      12, '#dadaeb',
-      14, '#bcbddc',
-      17, '#9e9ac8',
-      20, '#54278f',
+      15, '#dadaeb',
+      20, '#bcbddc',
+      25, '#9e9ac8',
+      30, '#54278f',
     ],
 
     herkomstNederland: [
