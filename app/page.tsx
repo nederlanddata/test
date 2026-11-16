@@ -74,7 +74,7 @@ const ONDERWERPEN = [
   {
     key: 'uitkeringsontvangersTotAow',
     label: 'Uitkeringsontvangers tot AOW',
-    eenheid: 'personen',
+    eenheid: '%',
   },
 ] as const;
 
