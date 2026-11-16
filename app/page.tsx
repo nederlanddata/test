@@ -866,6 +866,7 @@ function formatteerWaarde(
     key === 'volwassenen45Tot65' ||
     key === 'ouderen65Tot80' ||
     key === 'ouderen80Plus' ||
+    key === 'ouderen65Plus' ||
     key === 'herkomstNederland' ||
     key === 'herkomstEuropaExclNederland' ||
     key === 'herkomstBuitenEuropa'
@@ -998,6 +999,17 @@ function getKleurExpressie(
       6, '#bcbddc',
       7, '#9e9ac8',
       9, '#54278f',
+    ],
+    
+    ouderen65Plus: [
+      'interpolate',
+      ['linear'],
+      ['coalesce', ['get', 'ouderen65Plus'], 0],
+      10, '#f2f0f7',
+      12, '#dadaeb',
+      14, '#bcbddc',
+      17, '#9e9ac8',
+      20, '#54278f',
     ],
 
     herkomstNederland: [
