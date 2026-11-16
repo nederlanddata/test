@@ -48,7 +48,12 @@ const ONDERWERPEN = [
   },
   {
     key: 'ouderen80Plus',
-    label: 'Ouderen 80+',
+    label: '80+ jaar',
+    eenheid: '%',
+  },
+  {
+    key: 'ouderen65Plus',
+    label: '65+ jaar',
     eenheid: '%',
   },
   {
@@ -174,6 +179,17 @@ export default function KaartPage() {
           item.bevolking?.leeftijd?.['80Plus'],
           item.bevolking?.totaal
         );
+
+      case 'ouderen65Plus': {
+        const aantal65Tot80 = Number(item.bevolking?.leeftijd?.['65Tot80']) || 0;
+        const aantal80Plus = Number(item.bevolking?.leeftijd?.['80Plus']) || 0;
+        const totaalOuderen = aantal65Tot80 + aantal80Plus;
+
+        return berekenPercentage(
+          totaalOuderen > 0 ? totaalOuderen : null,
+          item.bevolking?.totaal
+        );
+      }
 
       // Herkomst: absolute aantallen -> percentage
       case 'herkomstNederland':
