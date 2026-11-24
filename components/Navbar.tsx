@@ -44,6 +44,16 @@ export default function Navbar() {
           >
             Kaart
           </Link>
+          <Link 
+            href="/moties" 
+            className={`transition-colors ${
+              pathname === "/moties" 
+                ? "text-blue-600 font-semibold" 
+                : "text-slate-600 hover:text-slate-900"
+            }`}
+          >
+            Moties
+          </Link>
           {/* <Link 
             href="/zoeken" 
             className={`transition-colors ${
