@@ -49,9 +49,9 @@ export default function MotiesPage() {
             Echte parlementaire besluiten van het afgelopen jaar, direct gekoppeld aan de daadwerkelijke stemuitslagen per fractie.
           </p> */}
           <div className="mt-4 flex items-center gap-4 text-xs text-gray-500">
-            <span className="bg-gray-200 px-2.5 py-1 rounded-md font-medium text-gray-700">
+            {/* <span className="bg-gray-200 px-2.5 py-1 rounded-md font-medium text-gray-700">
               Totaal: {data.aantal} items
-            </span>
+            </span> */}
             {data.laatst_bijgewerkt && (
               <span>Laatst bijgewerkt: {new Date(data.laatst_bijgewerkt).toLocaleDateString('nl-NL')}</span>
             )}
@@ -115,7 +115,7 @@ export default function MotiesPage() {
                   {/* Stemgedrag per fractie: Links VOOR, Rechts TEGEN */}
                   <div className="border-t border-gray-100 pt-4 mt-4">
                     <h3 className="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-3">
-                      Stemgedrag per fractie
+                      Stemgedrag per partij
                     </h3>
                     
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
