@@ -7,14 +7,14 @@ import 'maplibre-gl/dist/maplibre-gl.css';
 
 const ONDERWERPEN = [
   {
-    key: 'bevolkingsdichtheid',
-    label: 'Bevolkingsdichtheid',
-    eenheid: 'inw/km²',
-  },
-  {
     key: 'wozWaarde',
     label: 'WOZ-waarde',
     eenheid: '× €1.000',
+  },
+  {
+    key: 'bevolkingsdichtheid',
+    label: 'Bevolkingsdichtheid',
+    eenheid: 'inw/km²',
   },
   {
     key: 'totaleBevolking',
