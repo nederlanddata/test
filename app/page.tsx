@@ -93,7 +93,7 @@ export default function KaartPage() {
   const initialized = useRef(false);
 
   const [actiefOnderwerp, setActiefOnderwerp] =
-    useState<OnderwerpKey>('bevolkingsdichtheid');
+    useState<OnderwerpKey>('wozWaarde');
 
   const [modus, setModus] = useState<ModusType>('gemeenten');
   const [geladen, setGeladen] = useState(false);
