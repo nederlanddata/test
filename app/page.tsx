@@ -9,7 +9,7 @@ const ONDERWERPEN = [
   {
     key: 'wozWaarde',
     label: 'WOZ-waarde',
-    eenheid: '.000',
+    eenheid: '× 1000 euro',
   },
   {
     key: 'bevolkingsdichtheid',
